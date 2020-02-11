@@ -1,3 +1,3 @@
 import StartPage from './StartPage'
 
-export { StartPage }
+export default StartPage
