@@ -1,0 +1,13 @@
+{
+  "name": "main-ui",
+  "version": "1.0.0",
+  "description": "main-ui",
+  "main": "./src/index.js",
+  "author": "SmirnovVA",
+  "private": true,
+  "license": "ISC",
+  "dependencies": {
+    "containers": "1.0.0",
+    "components": "1.0.0"
+  }
+}
