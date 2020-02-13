@@ -10,7 +10,7 @@ const getRoutes = (routes, parentPath) => {
   const result = []
   routes.forEach(item => {
     const path = parentPath ? parentPath + item.path + '/' : item.path
-    result.push(<Route exact path={path} component={item.component} />)
+    result.push(<Route exact key={path} path={path} component={item.component} />)
     item.children && result.push(...getRoutes(item.children, path))
   })
   return result

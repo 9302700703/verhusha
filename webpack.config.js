@@ -2,7 +2,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: './packages/main-ui/src/index.js',
   output: {
     filename: '[name].bundle.js',
@@ -31,6 +31,10 @@ module.exports = {
       {
         test: /\.(global)?\.less$/,
         use: [ 'style-loader', 'css-loader', 'less-loader' ]
+      },
+      {
+        test: /\.(jpg)$/,
+        use: [ 'file-loader' ]
       }
     ]
   },
