@@ -1,3 +1,3 @@
 import ReplaceContent from './ReplaceContent'
 
-export { ReplaceContent }
+export default ReplaceContent
