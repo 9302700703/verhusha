@@ -1,0 +1,42 @@
+.toolbar {
+  position: fixed;
+  display: flex;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 60px;
+  z-index: 1;
+
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.toolbar-line {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.toolbar-item {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.toolbar-item-color {
+  stroke: white;
+  color: white;
+  transition-duration: 200ms;
+  &:hover {
+    stroke: green;
+    color: green;
+  }
+}

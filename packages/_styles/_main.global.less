@@ -1,10 +1,12 @@
 @import "startPage.less";
+@import "toolbar.less";
+@import "icon.less";
+@import "position.less";
 
 .main {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
 }
 
@@ -14,4 +16,12 @@
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+.disable-selection {
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 }
