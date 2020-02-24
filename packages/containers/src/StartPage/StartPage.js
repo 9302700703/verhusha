@@ -11,7 +11,8 @@ class StartPage extends React.Component {
     return (
       <div className='startPage'>
         <Toolbar>
-          <Toolbar.Item title='Регистрация' onClick={() => console.log('asdf')}/>
+          <Toolbar.Item title='Регистрация' onClick={() => this.props.push('regist')}/>
+          <Toolbar.Item title='Контакты' onClick={() => this.props.push('contact')}/>
           <Toolbar.Item icon={Icon.Types.SEARCH} />
         </Toolbar>
         <div className='background'>
