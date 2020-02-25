@@ -2,6 +2,9 @@
 @import "toolbar.less";
 @import "icon.less";
 @import "position.less";
+@import "registration.less";
+@import "workspace.less";
+@import "layout.less";
 
 .main {
   position: absolute;
@@ -11,7 +14,7 @@
 }
 
 .full-size {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -24,4 +27,9 @@
   -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
   -webkit-user-select: none; /* Chrome, Safari, and Opera */
   -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+.under-toolbar {
+  position: relative;
+  top: 60px;
 }

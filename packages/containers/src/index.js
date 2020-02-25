@@ -1,3 +1,5 @@
+import Contact from './Contact'
+import RegistrationForm from './RegistrationForm'
 import StartPage from './StartPage'
 
-export { StartPage }
+export { Contact, RegistrationForm, StartPage }
