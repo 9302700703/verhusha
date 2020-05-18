@@ -4,9 +4,15 @@ import Item from './Item'
 class Toolbar extends React.Component {
   render () {
     return (
-      <div className='toolbar'>
-        <div className='toolbar-line'/>
-          {this.props.children}
+      <div>
+        <div className='toolbar' style={{ justifyContent: 'flex-start' }}>
+          <div className='toolbar-line'/>
+          {this.props.children.filter(child => child.props.left)}
+        </div>
+        <div className='toolbar1'>
+          <div className='toolbar-line'/>
+          {this.props.children.filter(child => !child.props.left)}
+        </div>
       </div>
     )
   }

@@ -1,0 +1,26 @@
+.text-box {
+  outline: none;
+  border: 1px solid #7A7A7A;
+  border-radius: 8px;
+  padding: 2px 5px;
+  font-size: 16px;
+  height: 18px;
+  width: calc(100% - 11px);
+  &:focus {
+    border: 1px solid #5555FF;
+    background-color: #F0F0FF;
+  }
+}
+
+.text-box-read-only {
+  &:extend(.text-box);
+  outline: none;
+  border: none;
+  height: max-content;
+}
+
+.text-box-label {
+  color: #6A6A8F;
+  font-size: 16px;
+  padding: 0 0 3px 2px;
+}

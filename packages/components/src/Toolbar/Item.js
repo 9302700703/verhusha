@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Icon from '../Icon'
 
 class Item extends React.Component {
@@ -17,6 +18,16 @@ class Item extends React.Component {
       </div>
     )
   }
+}
+
+Item.propTypes = {
+  title: PropTypes.string,
+  icon: PropTypes.string,
+  onClick: PropTypes.func,
+  left: PropTypes.bool,
+  margin: PropTypes.string,
+  marginLeft: PropTypes.string,
+  marginRight: PropTypes.string
 }
 
 export default Item

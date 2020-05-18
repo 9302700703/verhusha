@@ -1,6 +1,19 @@
 .layout-row {
+  position: relative;
+  display: flex;
+  align-items: center;
   width: 100%;
   margin: 10px 0;
+  & > div {
+    width: 100%;
+  }
+}
+
+.layout-row-right {
+  & > div {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .layout-column {

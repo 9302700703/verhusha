@@ -14,6 +14,7 @@ class Icon extends React.Component {
 }
 
 Icon.Types = {
+  LOGO: 'Logo',
   SEARCH: 'Search'
 }
 

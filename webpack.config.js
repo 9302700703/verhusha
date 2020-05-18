@@ -11,7 +11,12 @@ module.exports = {
   devServer: {
     port: 3000,
     contentBase: path.join(__dirname, 'build'),
-    hot: true
+    hot: true,
+    proxy: {
+      '/Transport': {
+        target: 'http://localhost:8080'
+      }
+    }
   },
   performance: {
     hints: false
@@ -29,7 +34,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(global)?\.less$/,
+        test: /(\.global)?\.less$/,
         use: [ 'style-loader', 'css-loader', 'less-loader' ]
       },
       {
